@@ -26,9 +26,17 @@ import { EdSerService } from './ed-ser.service';
 
 import { AppComponent } from './app.component';
 import { SiteComponent } from './site/site.component';
+import { AboutComponent } from './about/about.component';
+import { KindsyogaComponent } from './kindsyoga/kindsyoga.component';
+import { CompanyyogaComponent } from './companyyoga/companyyoga.component';
+import { ContactComponent } from './contact/contact.component';
 
 const appRoutes: Routes = [
   { path: 'site', component: SiteComponent },
+  { path: 'over', component: AboutComponent },
+  { path: 'yogalessen', component: KindsyogaComponent },
+  { path: 'bedrijfsyoga', component: CompanyyogaComponent },
+  { path: 'contact', component: ContactComponent },
   { path: '',
     redirectTo: '/site',
     pathMatch: 'full'
@@ -39,7 +47,11 @@ const appRoutes: Routes = [
 @NgModule({
   declarations: [
     AppComponent,
-    SiteComponent
+    SiteComponent,
+    AboutComponent,
+    KindsyogaComponent,
+    CompanyyogaComponent,
+    ContactComponent
   ],
   imports: [
     RouterModule.forRoot(
