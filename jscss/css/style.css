@@ -291,7 +291,7 @@ p {
 	margin: 55px 0 15px;
 	font-size: 24px;
 	font-weight: 600;
-	text-transform:uppercase;
+	
 }
 .subtitle {
 	margin: 20px 0 15px;
@@ -322,7 +322,7 @@ p {
 	color: #ff4d7e;
 }
 .header-nav-bar .navbar-nav .nav-item > .nav-link {
-	text-transform: uppercase;
+	
 }
 .header-nav-bar .navbar-nav .nav-item:hover .dropdown-menu {
 	display:block;
@@ -523,7 +523,7 @@ font-size: 16px;
 .services h5 {
 	font-size: 19px;
 	font-weight: 600;
-	text-transform:uppercase;
+	
 }
 /*----------------------Driven---------------------*/
 .driven {
@@ -620,7 +620,7 @@ border-radius: .25rem;
 	border: 1px solid #ee4a79;
 	font-size: 17px;
 	color: #2d2b2d;
-	text-transform: uppercase;
+	
 	font-weight: 500;
 	padding: 5px 20px;
 	margin: 0 6px;
@@ -674,7 +674,7 @@ border-radius: .25rem;
 	margin: 14px 0 5px;
 	font-size: 15px;
 	font-weight: 400;
-	text-transform: uppercase;
+	
 	color:#ee4a79;
 }
 .testimonials .carousel-indicators li {
@@ -727,7 +727,7 @@ border-radius: .25rem;
 	font-size: 20px;
 	font-weight: 600;
 	color:#fff;
-	text-transform:uppercase;
+	
 }
 .footer p {
 	color: #999999;
@@ -879,7 +879,7 @@ background: #1d7fb8 none repeat scroll 0 0;
     font-size: 19px;
     color: #3a3a3a;
     font-weight: 600;
-	text-transform:uppercase;
+	
 }
 .we_creative {
     padding: 60px 0;
@@ -898,7 +898,7 @@ background: #1d7fb8 none repeat scroll 0 0;
     font-size: 18px;
     color: #3a3a3a;
     font-weight: 600;
-	text-transform:uppercase;
+	
 }
 .services2 .box p {
     font-size: 15px;
@@ -907,7 +907,7 @@ background: #1d7fb8 none repeat scroll 0 0;
     font-size: 19px;
     color: #3a3a3a;
     font-weight: 600;
-	text-transform:uppercase;
+	
 }
 .services2 .title {
     margin: 15px 0 15px;
@@ -932,7 +932,7 @@ background: #1d7fb8 none repeat scroll 0 0;
     font-size: 18px;
     color: #3a3a3a;
     font-weight: 600;
-    text-transform: uppercase;
+    
 }
 .border_l {
 
@@ -1037,7 +1037,7 @@ background-size: cover;
     font-size: 41px;
     color: #fff;
     font-weight: 700;
-	text-transform:uppercase;
+	
 }
 .business_md .box_l p {
     font-size: 15px;
@@ -1047,7 +1047,7 @@ background-size: cover;
     font-size: 18px;
     color: #fff;
     font-weight: 600;
-    text-transform: uppercase;
+    
 }
 .business_md .box_r p {
     font-size: 15px;
@@ -1088,17 +1088,17 @@ background-size: cover;
     font-size: 51px;
     color: #e01860;
     font-weight: 600;
-    text-transform: uppercase;
+    
 }
 .gym_fitness .slider .slide-text h3 {
     font-size: 29px;
     color: #3a3a3a;
     font-weight: 500;
-    text-transform: uppercase;
+    
 }
 .gym_fitness .slider .btn.btn-primary {
     font-size: 19px;
-    text-transform: uppercase;
+    
     font-weight: 600;
 	margin-top: 30px;
 }
@@ -1134,13 +1134,13 @@ background-size: cover;
 .find_time .open h3 {
 font-size: 20px;
 font-weight: 600;
-text-transform: uppercase;
+
 color:#fff;
 }
 .find_time .open h5 {
 font-size: 17px;
 font-weight: 600;
-text-transform: uppercase;
+
 color:#fff;
 }
 .find_time .right .align-self-top {
@@ -1188,7 +1188,7 @@ font-weight: 600;
 .find_time .right .price_b h5 {
     font-size: 17px;
     font-weight: 600;
-    text-transform: uppercase;
+    
     color: #fff;
 }
 
@@ -1396,7 +1396,7 @@ dt-sc-team {
 	font-size:14px;
 	color:#1d7fb8;
 	font-weight:600;
-	text-transform:uppercase;
+	
 	border:1px solid #1d7fb8;
 	border-radius:20px;
 	line-height: 22px;
@@ -1451,7 +1451,7 @@ dt-sc-team {
 
 .make_Appointment .wpcf7-form-control {
 	font-size: 14px;
-text-transform: uppercase;
+
 width: 100%;
 border-bottom: 1px solid #ddd;
 border-top: none;
@@ -1470,7 +1470,7 @@ padding: 2px 16px;
 line-height: 35px;
 margin-top: 15px;
 font-weight: 600;
-text-transform: uppercase;
+
 cursor: pointer;
 width: 102px;
 transition: all 0.5s ease
@@ -1511,7 +1511,7 @@ transition: all 0.5s ease
 font-size: 15px;
 color: #fff;
 font-weight: 600;
-text-transform: uppercase;
+
 border: 1px solid #fff;
 border-radius: 20px;
 line-height: 22px;
@@ -1570,7 +1570,7 @@ background: inherit;
 border: 1px solid #1d7fb8;
 font-weight: 500;
 color: #333;
-text-transform: uppercase;
+
 font-size: 15px;
 margin-top: 15px;
 transition: all 0.5s ease;
@@ -1658,7 +1658,7 @@ height: 255px;
 font-size: 15px;
 color: #3a3a3a;
 font-weight: 500;
-text-transform: uppercase;
+
 margin-top: 15px;
 }
 .our_team .box_m h6 {
@@ -1735,7 +1735,7 @@ padding: 10px 0 5px 0;
     margin: 0 0 0;
     font-size: 20px;
     font-weight: 600;
-    text-transform: uppercase;
+    
 }
 .pricing1 .card-body .subtitle {
     margin: 10px 0 15px;
@@ -1748,7 +1748,7 @@ padding: 10px 0 5px 0;
     padding: 5px 20px;
     line-height: 29px;
     margin-top: 15px;
-	text-transform:uppercase;
+	
 	transition: all 0.5s ease;
 	font-weight: 600;
 }
@@ -1778,14 +1778,14 @@ padding-top: 40px;
 	margin: 55px 0 20px;
 font-size: 55px;
 font-weight: 700;
-text-transform: uppercase;
+
 color:#fff;
 }
 
 .spspecial_offer h4 {
 font-size: 34px;
 font-weight: 600;
-text-transform: uppercase;
+
 color:#fff;
 position:relative
 }
@@ -1797,7 +1797,7 @@ position:relative
     padding: 5px 20px;
     line-height: 29px;
     margin-top: 50px;
-    text-transform: uppercase;
+    
 	font-weight: 600;
 	transition: all 0.5s ease;
 }
@@ -1816,7 +1816,7 @@ position:relative
 }
 .contacts_bottom .wpcf7-form-control {
     font-size: 14px;
-    text-transform: uppercase;
+    
     width: 100%;
     border-bottom: 1px solid #ddd;
     border-top: none;
@@ -1835,7 +1835,7 @@ position:relative
     line-height: 35px;
     margin-top: 15px;
     font-weight: 600;
-    text-transform: uppercase;
+    
     cursor: pointer;
     width: 102px;
 	margin-bottom:0px;
@@ -1893,7 +1893,7 @@ cursor:pointer;
     color: #3a3a3a;
     font-size: 16px;
     font-weight: 500;
-	text-transform:uppercase;
+	
 	margin-bottom: 10px;
 }
 .single-sidebar .categories li {
@@ -1984,7 +1984,7 @@ left: 10px;
 background-color: #3a3a3a;
 padding: 10px 10px;
 color: #fff;
-text-transform: uppercase;
+
 font-size: 14px;
 text-align: center;
 }
@@ -2110,7 +2110,7 @@ margin: 40px 0 40px 60px;
     padding-top: 0;
     color: #bbbbbb;
     font-size: 14px;
-    text-transform: uppercase;
+    
     font-weight: 600;
 }
 .blog_post_barr .Share .fa {
@@ -2147,7 +2147,7 @@ margin-right: 4px;
     padding-top: 0;
     color: #bbbbbb;
     font-size: 14px;
-    text-transform: uppercase;
+    
     font-weight: 600;
 }
 .blog_post_barr li {
@@ -2216,7 +2216,7 @@ margin-bottom:25px;
 font-size: 14px;
 color: #fff;
 font-weight: 600;
-text-transform: uppercase;
+
 border: 1px solid #ee4a79;
 border-radius: 22px;
 line-height: 29px;
