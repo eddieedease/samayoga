@@ -21,7 +21,7 @@
       <div class="container po-relative">
         <nav class="navbar navbar-expand-lg hover-dropdown header-nav-bar"> <a href="05-Health-Home-Page.html" class="navbar-brand"><img src="assets/images/logo3.png" alt="fullstackit"></a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#h5-info" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
-          <div class="collapse navbar-collapse" id="h5-info">
+          <div class="collapse navbar-collapse"  id="h5-info">
             <ul class="navbar-nav">
               <!-- <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> demos </a>
                 <ul class="b-none dropdown-menu font-14 animated fadeInUp">
@@ -31,11 +31,11 @@
                   <li><a class="dropdown-item" href="04-Gym-Fitness-Home-Page.html">Gym Fitness</a></li>
                   <li><a class="dropdown-item" href="05-Health-Home-Page.html">Health & Medical</a></li>
                 </ul></li> --> 
-                <li class="nav-item"> <a class="nav-link" [routerLink]="['/']">Home</a></li>
-              <li class="nav-item"> <a class="nav-link"  [routerLink]="['/over']" >Over</a></li>
-              <li class="nav-item"> <a class="nav-link"  [routerLink]="['/yogalessen']" >Yogalessen</a></li>
-              <li class="nav-item"> <a class="nav-link"  [routerLink]="['/bedrijfsyoga']" >Bedrijfsyoga</a></li>
-              <li class="nav-item"> <a class="nav-link"  [routerLink]="['/contact']" >Contact</a></li>
+                <li class="nav-item"> <a class="nav-link" (click)="hideMenu()" [routerLink]="['/']">Home</a></li>
+              <li class="nav-item"> <a class="nav-link" (click)="hideMenu()" [routerLink]="['/over']" >Over</a></li>
+              <li class="nav-item"> <a class="nav-link" (click)="hideMenu()" [routerLink]="['/yogalessen']" >Yogalessen</a></li>
+              <li class="nav-item"> <a class="nav-link" (click)="hideMenu()" [routerLink]="['/bedrijfsyoga']" >Bedrijfsyoga</a></li>
+              <li class="nav-item"> <a class="nav-link" (click)="hideMenu()" [routerLink]="['/contact']" >Contact</a></li>
              
               <!-- <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pages</a>
                 <ul class="b-none dropdown-menu font-14 animated fadeInUp">

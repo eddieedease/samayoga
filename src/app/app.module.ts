@@ -31,6 +31,8 @@ import { KindsyogaComponent } from './kindsyoga/kindsyoga.component';
 import { CompanyyogaComponent } from './companyyoga/companyyoga.component';
 import { ContactComponent } from './contact/contact.component';
 
+
+
 const appRoutes: Routes = [
   { path: 'site', component: SiteComponent },
   { path: 'over', component: AboutComponent },
