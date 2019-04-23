@@ -58,7 +58,7 @@ const appRoutes: Routes = [
   imports: [
     RouterModule.forRoot(
       appRoutes,
-      { useHash: false } // <-- debugging purposes only
+      { useHash: true } // <-- debugging purposes only
     ),
     BrowserModule,
     ToastrModule.forRoot(),
