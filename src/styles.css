@@ -1,1 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+.bg-prim{
+    background-color: #FFDFD3	 !important;
+}
+
+.bg-prim2{
+    background-color: #957DAD	 !important;
+}
+
+.bg-prim3{
+    background-color: #FEC8D8	 !important;
+}

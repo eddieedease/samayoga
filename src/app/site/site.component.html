@@ -15,9 +15,9 @@
                 <h3>Sandra Maas</h3>
                 <h1>Yoga</h1>
                 <p>Voor alles in Yoga</p>
-                <div>
+                <!-- <div>
                   <button type="button" class="btn btn-primary">Meer..</button>
-                </div>
+                </div> -->
               </div>
             </div>
           </div>
@@ -106,32 +106,31 @@
     </div>
     <div class="row m-t-35"> 
       <!-- Column -->
-      <div class="col-md-4">
-        <div class="box"><div class="news_img"> <a href="#"><img src="assets/images/news1.png" alt="fullstackit"></a></div>
-          <div class="p-t-20"> <a href="#">Yogalessen</a>
+      <div class="col-md-4" >
+        <div class="box" [routerLink]="['/yogalessen']"><div class="news_img"><img src="assets/images/news1.png" alt="fullstackit"></div>
+          <div class="p-t-20"> <a>Yogalessen</a>
             <!-- <h3>Oct 26, 16 by admin</h3> -->
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
-            <button type="button" [routerLink]="['/yogalessen']" class="btn btn-primary">Lees meer</button>
+            <p>Ik verzorg yogalessen voor groepen, klik voor meer informatie</p>
+            <button type="button"  class="btn btn-primary">Meer info</button>
           </div>
         </div>
       </div>
       <!-- Column -->
       <div class="col-md-4">
-        <div class="box"> <div class="news_img"><a href="#"><img src="assets/images/news2.png" alt="fullstackit"></a></div>
-          <div class="p-t-20"> <a href="#">Privé lessen</a>
+        <div class="box" [routerLink]="['/yogalessen']"> <div class="news_img"><img src="assets/images/news2.png" alt="fullstackit"></div>
+          <div class="p-t-20"> <a>Privé lessen</a>
             <!-- <h3>Oct 26, 16 by admin</h3> -->
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
-            <button type="button" [routerLink]="['/yogalessen']" class="btn btn-primary">Lees meer</button>
+            <p>Yoga, voor u op maat gemaakt. Klik voor meer informatie</p>            <button type="button"  class="btn btn-primary">Meer info</button>
           </div>
         </div>
       </div>
       <!-- Column -->
       <div class="col-md-4">
-        <div class="box"><div class="news_img"> <a href="#"><img src="assets/images/news3.png" alt="fullstackit"></a></div>
-          <div class="p-t-20"> <a href="#">Bedrijfsyoga</a>
+        <div class="box" [routerLink]="['/bedrijfsyoga']"><div class="news_img"> <img src="assets/images/news3.png" alt="fullstackit"></div>
+          <div class="p-t-20"> <a>Bedrijfsyoga</a>
             <!-- <h3>Oct 26, 16 by admin</h3> -->
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
-            <button type="button" [routerLink]="['/bedrijfsyoga']" class="btn btn-primary">Lees meer</button>
+            <p>Naast goede teambuilding, natuurlijk supergezond! Klik voor meer informatie</p>
+            <button type="button"  class="btn btn-primary">Meer info</button>
           </div>
         </div>
       </div>
