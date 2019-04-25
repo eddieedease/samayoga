@@ -1,7 +1,7 @@
 
 <!-- Contact -->
 
-<div class="container">
+
   <section id="Appointment1" class="make_Appointment">
     <div class="container-fluid">
       <div class="row">
@@ -21,26 +21,26 @@
                     <div class="container">
                       <div class="row">
                         <div class="col-md-6"> <span class="wpcf7-form-control-wrap FName">
-                          <input type="text" name="FName" value="" class="wpcf7-form-control" aria-required="true" aria-invalid="false" placeholder="Naam">
+                          <input type="text" [(ngModel)]="currentName" [ngModelOptions]="{standalone: true}" name="FName" value="" class="wpcf7-form-control" aria-required="true" aria-invalid="false" placeholder="Naam">
                           </span> </div>
                         <div class="col-md-6"> <span class="wpcf7-form-control-wrap email">
-                          <input type="email" name="email" value="" class="wpcf7-form-control" aria-invalid="false" placeholder="Email">
+                          <input type="email" [(ngModel)]="currentEmail" [ngModelOptions]="{standalone: true}" name="email" value="" class="wpcf7-form-control" aria-invalid="false" placeholder="Email">
                           </span> </div>
                       </div>
                       <div class="row">
                         <div class="col-md-6"> <span class="wpcf7-form-control-wrap Phone">
-                          <input type="tel" name="Phone" value="" class="wpcf7-form-control" aria-invalid="false" placeholder="Tel nummer (optioneel)">
+                          <input type="tel" [(ngModel)]="currentSubject" [ngModelOptions]="{standalone: true}" name="Phone" value="" class="wpcf7-form-control" aria-invalid="false" placeholder="Tel nummer (optioneel)">
                           </span> </div>
                     
                       </div>
                       <div class="row">
                         <div class="col-md-12"> <span class="wpcf7-form-control-wrap Message">
-                          <textarea name="Message" cols="40" rows="3" class="wpcf7-form-control wpcf7-textarea medicom-forms" aria-invalid="false" placeholder="Bericht"></textarea>
+                          <textarea name="Message" [(ngModel)]="currentMessage" [ngModelOptions]="{standalone: true}" cols="40" rows="3" class="wpcf7-form-control wpcf7-textarea medicom-forms" aria-invalid="false" placeholder="Bericht"></textarea>
                           </span> </div>
                       </div>
                       <div class="row">
                         <div class="col-md-12">
-                          <input type="submit" value="Verzend" class="wpcf7-form-control wpcf7-submit buton b_asset">
+                          <input type="submit" (click)="sendMail()" value="Verzend" class="wpcf7-form-control wpcf7-submit buton b_asset" style="border-radius: 10px !important">
                         </div>
                       </div>
                     </div>
@@ -54,5 +54,5 @@
       </div>
     </div>
   </section>
-</div>
+
 

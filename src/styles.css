@@ -10,3 +10,8 @@
 .bg-prim3{
     background-color: #FEC8D8	 !important;
 }
+
+#toast-container > div {
+    opacity:1;
+    background-color: rgb(51, 53, 52);
+}
