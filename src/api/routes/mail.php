@@ -24,7 +24,7 @@ $app->post('/sendcontactform', function (Request $request, Response $response) {
     $contactmessage = $parsedBody[message];
 
     $aiemail = 'info@yogametsandra.nl';
-
+    $aiemail2 = 's-maas@live.nl';
 
     $mail = new PHPMailer;
     $mail->isSMTP();
@@ -38,7 +38,7 @@ $app->post('/sendcontactform', function (Request $request, Response $response) {
     // NOTE:
     $mail->setFrom('info@yogametsandra.nl', 'Info Yoga met Sandra');
     $mail->addReplyTo('info@yogametsandra.nl', 'Sandra Maas');
-    $mail->addReplyTo('s-maas@live.nl', 'Renurse Contactformulier');
+
     $mail->Subject = "Contactformulier";
 
     //msgHTML also sets AltBody, but if you want a custom one, set it afterwards
@@ -360,6 +360,7 @@ $app->post('/sendcontactform', function (Request $request, Response $response) {
 
     $mail->msgHTML($body);
     $mail->addAddress($aiemail);
+    $mail->addAddress($aiemail2);
     // if (!empty($row['photo'])) {
     //     $mail->addStringAttachment($row['photo'], 'YourPhoto.jpg'); //Assumes the image data is stored in the DB
     // }
