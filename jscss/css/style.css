@@ -1450,7 +1450,8 @@ dt-sc-team {
 .make_Appointment {
 	background-image: url("../../src/assets/images/ap_back.png");
 	padding-bottom: 60px;
-	background-position-x: 30%;
+    background-position-x: 30%;
+    background-repeat:no-repeat;
 }
 .make_Appointment .wpb_column.vc_column_container {
     width: 100%;
@@ -2762,7 +2763,7 @@ transition: all 0.5s ease;
     top: 4%;
 }
 .make_Appointment {
-    background-position-x: 29%;
+    background-position-x: 24%;
 }
 
 

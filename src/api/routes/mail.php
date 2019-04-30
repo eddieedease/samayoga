@@ -33,13 +33,11 @@ $app->post('/sendcontactform', function (Request $request, Response $response) {
     $mail->SMTPAuth = true;
     $mail->SMTPKeepAlive = true; // SMTP connection will not close after each email sent, reduces SMTP overhead
     $mail->Port = 465;
-    $mail->Username = '!!!!mail!!!!';
-    $mail->Password = '!!!!pwd!!!!';
+    $mail->Username = 'info@yogametsandra.nl';
+    $mail->Password = 'blahblah';
     // NOTE:
     $mail->setFrom('info@yogametsandra.nl', 'Info Yoga met Sandra');
-    $mail->addReplyTo('info@yogametsandra.nl', 'Sandra Maas');
-
-    $mail->Subject = "Contactformulier";
+    $mail->addReplyTo('info@yogametsandra.nl', 'Info Yoga met Sandra');
 
     //msgHTML also sets AltBody, but if you want a custom one, set it afterwards
     $mail->AltBody = 'Om deze html te bekijken heb je een email client nodig die html mails kan laten zien!';
@@ -339,7 +337,7 @@ $app->post('/sendcontactform', function (Request $request, Response $response) {
               <table border="0" cellpadding="0" cellspacing="0">
                 <tr>
                   <td class="content-block">
-                    <span class="apple-link">E-waste Arcades</span>
+                    <span class="apple-link">yogametsandra.nl</span>
 
                   </td>
                 </tr>
