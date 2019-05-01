@@ -34,7 +34,7 @@ export class ContactComponent implements OnInit {
   sendMail() {
     if (this.currentEmail !== '' && this.currentMessage !== '' && this.currentName !== '') {
       // tslint:disable-next-line:max-line-length
-      this.edSer.API_sendcontactform(this.currentEmail, this.currentName, this.currentMessage).subscribe(value => this.contactFormSend(value));
+      this.edSer.API_sendcontactform(this.currentEmail, this.currentName, this.currentMessage, this.currentSubject).subscribe(value => this.contactFormSend(value));
     } else {
       this.toastr.warning('Nog niet alles ingevuld', '');
     }

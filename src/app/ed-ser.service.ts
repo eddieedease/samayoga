@@ -32,14 +32,15 @@ export class EdSerService {
   }
 
    // Create publication
-   API_sendcontactform(_mail, _name, _message): Observable < any > {
+   API_sendcontactform(_mail, _name, _message, _tel): Observable < any > {
     // tslint:disable-next-line:max-line-length
     const url = environment.apilink + 'sendcontactform?rnd=' + new Date().getTime();
     // let blobReplaceUserId = jsonblobstring.replace('__userid__', '' + this.curID);
     const upt = {
       'email': _mail,
       'name': _name,
-      'message': _message
+      'message': _message,
+      'tel': _tel
     };
     const body = JSON.stringify(upt);
     // const howmanykb = this.byteCount(body);

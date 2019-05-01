@@ -22,6 +22,7 @@ $app->post('/sendcontactform', function (Request $request, Response $response) {
     $contactname = $parsedBody[name];
     $contactemail = $parsedBody[email];
     $contactmessage = $parsedBody[message];
+    $telmessage = $parsedBody[tel];
 
     $aiemail = 'info@yogametsandra.nl';
     $aiemail2 = 's-maas@live.nl';
@@ -307,7 +308,7 @@ $app->post('/sendcontactform', function (Request $request, Response $response) {
                       <td>
                          <h3>Contact email vanaf de site</h3>
                         <p>Er is een bericht via de site verstuurd</p>
-                        <p>Zender:' . $contactemail . '</b> door '. $contactname . ' </p><br><br>
+                        <p>Zender:' . $contactemail . '</b> door '. $contactname . ' Tel: '. $telmessage . '</p><br><br>
                         <table border="0" cellpadding="0" cellspacing="0" class="btn btn-primary">
                           <tbody>
                             <tr>
