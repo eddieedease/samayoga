@@ -24,8 +24,8 @@ $app->post('/sendcontactform', function (Request $request, Response $response) {
     $contactmessage = $parsedBody[message];
     $telmessage = $parsedBody[tel];
 
-    $aiemail = 'info@yogametsandra.nl';
-    $aiemail2 = 's-maas@live.nl';
+    $aiemail = 'emailadres';
+    $aiemail2 = 'emailadres';
 
     $mail = new PHPMailer;
     $mail->isSMTP();
@@ -34,11 +34,11 @@ $app->post('/sendcontactform', function (Request $request, Response $response) {
     $mail->SMTPAuth = true;
     $mail->SMTPKeepAlive = true; // SMTP connection will not close after each email sent, reduces SMTP overhead
     $mail->Port = 465;
-    $mail->Username = 'info@yogametsandra.nl';
+    $mail->Username = 'emailadres';
     $mail->Password = 'blahblah';
     // NOTE:
-    $mail->setFrom('info@yogametsandra.nl', 'Info Yoga met Sandra');
-    $mail->addReplyTo('info@yogametsandra.nl', 'Info Yoga met Sandra');
+    $mail->setFrom('emailadres', 'Info Yoga met Sandra');
+    $mail->addReplyTo('emailadres', 'Info Yoga met Sandra');
 
     //msgHTML also sets AltBody, but if you want a custom one, set it afterwards
     $mail->AltBody = 'Om deze html te bekijken heb je een email client nodig die html mails kan laten zien!';
