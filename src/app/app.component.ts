@@ -14,6 +14,8 @@ declare var $: any;
 export class AppComponent {
   title = 'app';
   
+  dt = new Date();
+  yearr = this.dt.getFullYear();
 
   hideMenu() {
     $('.navbar-collapse').collapse('hide');
