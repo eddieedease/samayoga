@@ -1,11 +1,12 @@
-
 import {
   Http,
   Response,
   Headers,
   RequestOptions
 } from '@angular/http';
-import { Injectable } from '@angular/core';
+import {
+  Injectable
+} from '@angular/core';
 import {
   Observable,
   Subject
@@ -27,12 +28,27 @@ import {
 })
 export class EdSerService {
 
+
+  __currentPage = "";
+
   constructor(private http_: Http) {
 
   }
 
-   // Create publication
-   API_sendcontactform(_mail, _name, _message, _tel): Observable < any > {
+
+  getsetCurrent(_method, _currentpage) {
+    let val;
+    switch (_method) {
+      case 'get':
+        return this.__currentPage;
+      case 'set':
+        this.__currentPage = _currentpage;
+        break;
+    };
+  };
+
+  // Create publication
+  API_sendcontactform(_mail, _name, _message, _tel): Observable < any > {
     // tslint:disable-next-line:max-line-length
     const url = environment.apilink + 'sendcontactform?rnd=' + new Date().getTime();
     // let blobReplaceUserId = jsonblobstring.replace('__userid__', '' + this.curID);

@@ -322,6 +322,7 @@ p {
 	color: #ff4d7e;
 }
 .header-nav-bar .navbar-nav .nav-item > .nav-link {
+    padding:15px;
 	
 }
 .header-nav-bar .navbar-nav .nav-item:hover .dropdown-menu {
@@ -481,7 +482,7 @@ font-size: 16px;
 	text-align: center;
 }
 .slider .slide-text h1 {
-	font-size:51px;
+	font-size:40px;
 	color:#fff;
 	font-weight:600;
 }
@@ -1092,7 +1093,7 @@ background-size: cover;
     text-align: left;
 }
 .gym_fitness .slider .slide-text h1 {
-    font-size: 51px;
+    font-size: 40px;
     color: #e01860;
     font-weight: 600;
     
@@ -2763,7 +2764,7 @@ transition: all 0.5s ease;
     top: 4%;
 }
 .make_Appointment {
-    background-position-x: 24%;
+    background-position-x: 40%;
 }
 
 
@@ -2779,6 +2780,8 @@ transition: all 0.5s ease;
     width: 75%;
 }
  }
+
+ 
  
 @media (min-width: 992px) and (max-width: 1199.98px) { 
  .header .navbar-brand {
@@ -2846,6 +2849,10 @@ transition: all 0.5s ease;
 } 
 .portfolio1 .tab-pane ul {
     text-align: center;
+}
+
+.slide-image {
+    width: 100%;
 }
  }
 @media (max-width: 360px) {

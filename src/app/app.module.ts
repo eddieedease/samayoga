@@ -31,6 +31,8 @@ import { KindsyogaComponent } from './kindsyoga/kindsyoga.component';
 import { CompanyyogaComponent } from './companyyoga/companyyoga.component';
 import { ContactComponent } from './contact/contact.component';
 
+import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
+
 
 
 const appRoutes: Routes = [
@@ -65,6 +67,7 @@ const appRoutes: Routes = [
     HttpModule,
     JsonpModule,
     FormsModule,
+    ScrollToModule.forRoot(),
     BrowserAnimationsModule,
     NgxLoadingModule.forRoot({}),
     BsDropdownModule.forRoot(),
@@ -75,6 +78,7 @@ const appRoutes: Routes = [
     CollapseModule.forRoot(),
     ButtonsModule.forRoot()
   ],
+  exports: [RouterModule],
   providers: [EdSerService],
   bootstrap: [AppComponent]
 })

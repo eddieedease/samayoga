@@ -13,7 +13,7 @@
               <div class="col-md-12">
                 <h3></h3>
                 <h1>Yoga met Sandra</h1>
-                <p>Hatha (flow) - Power / Vinyasa - Yin</p>
+                <p>Hatha - Power / Vinyasa - Yin</p>
                 <!-- <div>
                   <button type="button" class="btn btn-primary">Meer..</button>
                 </div> -->
@@ -105,35 +105,46 @@
     </div>
     <div class="row m-t-35">
       <!-- Column -->
-      <div class="col-md-4">
-        <div class="box" [routerLink]="['/yogalessen']">
-          <div class="news_img"><img style="cursor:pointer" src="assets/groepsyoga.jpg" alt="fullstackit"></div>
-          <div class="p-t-20"> <a>Groepsyoga</a>
+      <div class="col-md-3">
+        <div class="box" (click)="scrollTo()" >
+          <div class="news_img"><img style="cursor:pointer" src="assets/woensdag.jpg" alt="fullstackit"></div>
+          <button type="button"  class="btn btn-primary">Meer informatie..</button><div class="p-t-20" > <a>Yoga Woensdag</a>
             <!-- <h3>Oct 26, 16 by admin</h3> -->
-            <p>Divers aanbod yoga, klik voor meer informatie</p>
-            <button type="button" class="btn btn-primary">Meer info</button>
+            <p>Rust en Ontspanning met Yoga op Woensdagavond
+            </p> 
           </div>
         </div>
       </div>
+      
       <!-- Column -->
-      <div class="col-md-4">
+      <div class="col-md-3">
         <div class="box" [routerLink]="['/yogalessen']">
           <div class="news_img"><img style="cursor:pointer" src="assets/privatelesson.jpg" alt="fullstackit"></div>
-          <div class="p-t-20"> <a>Privé yoga</a>
+          <button type="button" class="btn btn-primary">Meer informatie..</button><div class="p-t-20"> <a>Privé yoga</a>
             <!-- <h3>Oct 26, 16 by admin</h3> -->
-            <p>Yoga, voor u op maat gemaakt. Klik voor meer informatie</p> <button type="button"
-              class="btn btn-primary">Meer info</button>
+            <p>Yoga speciaal afgestemd op wat jij op dat moment wil of nodig hebt. Een privéles kan bij jou thuis, voor jou alleen of in een klein gezelschap.</p> 
           </div>
         </div>
       </div>
       <!-- Column -->
-      <div class="col-md-4">
+      <div class="col-md-3">
         <div class="box" [routerLink]="['/bedrijfsyoga']">
           <div class="news_img"> <img style="cursor:pointer" src="assets/companyyoga.jpg" alt="fullstackit"></div>
-          <div class="p-t-20"> <a>Bedrijfsyoga</a>
+          <button type="button" class="btn btn-primary">Meer informatie..</button><div class="p-t-20"> <a>Bedrijfsyoga</a>
             <!-- <h3>Oct 26, 16 by admin</h3> -->
-            <p>Naast goede gezondheid verbetert het ook de productiviteit! Klik voor meer informatie</p>
-            <button type="button" class="btn btn-primary">Meer info</button>
+            <p >Naast goede gezondheid verbetert het ook de productiviteit!</p>
+            
+          </div>
+        </div>
+      </div>
+      <!-- Column -->
+      <div class="col-md-3">
+        <div class="box" (click)="toRoosterr()">
+          <div class="news_img"><img style="cursor:pointer" src="assets/groepsyoga.jpg" alt="fullstackit"></div>
+          <button type="button" class="btn btn-primary">Meer informatie..</button><div class="p-t-20"> <a>Workshop / Groepsles Yoga</a>
+            <!-- <h3>Oct 26, 16 by admin</h3> -->
+            <p>Wil je een Yoga workshop? Of ben je als yogastudio of sportschool op zoek naar een (inval) yogadocent?</p>
+            
           </div>
         </div>
       </div>
@@ -141,7 +152,84 @@
   </div>
 </div>
 
+
 <section class="bg-prim2 text-white py-5">
+  <div class="container"><br><br>
+    <div id="woensdag" class="row">
+    <div class="col-md-4"><p style="color:black; font-size: larger;" ><br><b>NIEUW (vanaf 1-1-2021)</b>
+    </p>
+          <h4 style="color:white">Rust en Ontspanning met Yoga op Woensdagavond
+          </h4><br>
+          <p style="color:white !important">Elke woensdagavond in Vlijmen Yin Yoga met een vleugje Yang. Met name gericht op ontspanning, stress loslaten en ruimte creëren in jouw lichaam en het hoofd leegmaken. 
+          </p>
+        </div>
+      <div class="col-md-8" >
+        <div class="table-responsive" >
+          <table class="table table-striped" style='background-color:white;color: rgb(21, 9, 75)'>
+              <tbody >
+                <tr >
+                  <td style="padding:20px"><br><b>Locatie:</b>	</td>
+                  <td colspan="2"><br>Deken van Baarstraat 21, 5251 RH in Vlijmen (Fysio Annette de Gooijer)<br>
+                    Zaal boven (trap omhoog bij binnenkomst)<br>
+                    </td>
+                  
+                </tr>
+                <tr>
+                   
+                  <td style="padding:20px"><br><b>Tijd:</b><br></td>
+                  <td><br>18.45-20.00 uur <br>20.15-21.30 uur<br></td>
+                  <td><br>Yang met een vleugje Yin<br>Yin met een vleugje Yang</td>
+                </tr>
+                <tr>
+                  
+                  <td ><br>
+                    <ul style="list-style-type: disc;">
+                      <li><b>Losse les</b><br></li>
+                      <li><b>10 Lessen kaart</b><br></li>
+                      <li><b>Proefles</b></li>
+                    </ul>
+                    
+                    
+                  
+                  <br><br></td>
+                  <td ><br>
+                    
+                    <ul style="list-style-type: disc;">
+                      <li>€ 12,50<br></li>
+                      <li>€ 100,00 (€10,00 per les, 4 maanden geldig)<br></li>
+                      <li>Gratis</li>
+                    </ul>
+                    
+                    
+                    
+                    <br></td>
+                  <td>
+                    
+                    
+                    <br>Anytime Fitness Vlijmen<br><a href="https://www.anytimefitness.nl" target="_blanc">https://www.anytimefitness.nl</a></td>
+                </tr>
+              </tbody>
+            </table></div>
+            <br> 
+            <p style="color:white">Aanmelden of informatie: mail <A style="color:#09fff5" HREF="mailto:info@yogametsandra.nl">info@yogametsandra.nl</A> of <a style="color:#09fff5" [routerLink]="['/contact']">neem contact op</a>.</p>
+        
+        </div></div>
+
+        
+     
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+<!-- <section class="bg-prim2 text-white py-5">
   <div class="container">
     <div class="row">
     <div class="col-md-4 text-center">
@@ -185,3 +273,4 @@
      
   </div>
 </section>
+ -->

@@ -11,6 +11,8 @@ import {
   ToastrService
 } from 'ngx-toastr';
 
+import { ScrollToService, ScrollToConfigOptions } from '@nicky-lenaers/ngx-scroll-to';
+
 @Component({
   selector: 'app-contact',
   templateUrl: './contact.component.html',
@@ -25,10 +27,15 @@ export class ContactComponent implements OnInit {
   currentMessage = '';
 
 
-  constructor(private edSer: EdSerService, private toastr: ToastrService) {}
+  constructor(private edSer: EdSerService, private toastr: ToastrService, private scrollToService: ScrollToService) {}
 
   ngOnInit() {
     window.scrollTo(0, 0);
+    this.edSer.getsetCurrent('set', 'contact');
+
+    setTimeout(() => {
+      this.scrollTo();
+    }, 100);
   }
 
   sendMail() {
@@ -48,6 +55,16 @@ export class ContactComponent implements OnInit {
     this.currentSubject = '';
     this.currentMessage = '';
     this.toastr.success('Bedankt!', 'Ik doe mijn best zo snel mogelijk te reageren.');
+  }
+
+  scrollTo(){
+    const config: ScrollToConfigOptions = {
+      target: 'formm'
+    };
+
+    this.scrollToService.scrollTo(config);
+
+    
   }
 
 }
