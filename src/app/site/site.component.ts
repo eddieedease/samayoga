@@ -37,7 +37,7 @@ export class SiteComponent implements OnInit {
   }
 
   toRoosterr(){
-    this.serCred.getsetCurrent('set', 'toroosterr');
+    // this.serCred.getsetCurrent('set', 'toroosterr');
     this.router.navigate(['yogalessen']);
   }
 
