@@ -32,6 +32,7 @@ import { CompanyyogaComponent } from './companyyoga/companyyoga.component';
 import { ContactComponent } from './contact/contact.component';
 
 import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
+import { AvComponent } from './av/av.component';
 
 
 
@@ -41,6 +42,7 @@ const appRoutes: Routes = [
   { path: 'yogalessen', component: KindsyogaComponent },
   { path: 'bedrijfsyoga', component: CompanyyogaComponent },
   { path: 'contact', component: ContactComponent },
+  { path: 'algemenevoorwaarden', component: AvComponent },
   { path: '',
     redirectTo: '/site',
     pathMatch: 'full'
@@ -55,7 +57,8 @@ const appRoutes: Routes = [
     AboutComponent,
     KindsyogaComponent,
     CompanyyogaComponent,
-    ContactComponent
+    ContactComponent,
+    AvComponent
   ],
   imports: [
     RouterModule.forRoot(
