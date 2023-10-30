@@ -19,10 +19,10 @@ $app->post('/sendcontactform', function (Request $request, Response $response) {
     $parsedBody = $request->getParsedBody();
     // TODO: ADD SOME SALTING RIGHT THERE
     // Some logic to check the pwd's
-    $contactname = $parsedBody[name];
-    $contactemail = $parsedBody[email];
-    $contactmessage = $parsedBody[message];
-    $telmessage = $parsedBody[tel];
+    $contactname = $parsedBody['name'];
+    $contactemail = $parsedBody['email'];
+    $contactmessage = $parsedBody['message'];
+    $telmessage = $parsedBody['tel'];
 
     $aiemail = 'emailadres';
     $aiemail2 = 'emailadres';
