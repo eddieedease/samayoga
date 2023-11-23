@@ -34,6 +34,7 @@ import { ContactComponent } from './contact/contact.component';
 import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
 import { AvComponent } from './av/av.component';
 import { CoachingComponent } from './coaching/coaching.component';
+import { AgendaComponent } from './agenda/agenda.component';
 
 
 
@@ -42,6 +43,7 @@ const appRoutes: Routes = [
   { path: 'over', component: AboutComponent },
   { path: 'yogalessen', component: KindsyogaComponent },
   { path: 'bedrijfsyoga', component: CompanyyogaComponent },
+  { path: 'agenda', component: AgendaComponent },
   { path: 'coaching', component: CoachingComponent },
   { path: 'contact', component: ContactComponent },
   { path: 'algemenevoorwaarden', component: AvComponent },
@@ -61,7 +63,8 @@ const appRoutes: Routes = [
     CompanyyogaComponent,
     ContactComponent,
     AvComponent,
-    CoachingComponent
+    CoachingComponent,
+    AgendaComponent
   ],
   imports: [
     RouterModule.forRoot(
