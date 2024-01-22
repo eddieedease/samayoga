@@ -33,9 +33,9 @@ export class ContactComponent implements OnInit {
     window.scrollTo(0, 0);
     this.edSer.getsetCurrent('set', 'contact');
 
-    setTimeout(() => {
+    /* setTimeout(() => {
       this.scrollTo();
-    }, 100);
+    }, 0); */
   }
 
   sendMail() {
